@@ -1,0 +1,122 @@
+
+
+**Elevate360 Landing Page (with Updated About Us)**
+
+> Objective:
+> Create a professional, visually engaging, high-converting website landing page for the launch of “Elevate360” by Virtù Nera. The landing page should feel futuristic, empowering, and human-centered — tailored for learners, professionals, mentors, trainers, employers, and community leaders.
+>
+> Use modular layout, emotionally resonant copy, and conversion-focused CTAs. Keep the tone inspirational, clear, and aligned with innovation, trust, and purpose.
+
+---
+
+### ✅ Required Sections:
+
+1. **Hero Section (Above the Fold)**
+
+   * Title: Elevate360 — The Future of Professional Growth
+   * Tagline: Unlock your potential with a modular, AI-powered professional development ecosystem.
+   * CTA Button: Register / Start Your Journey
+
+2. **What is Elevate360?**
+
+   * A powerful, concise overview that explains Elevate360 as a modular, AI-powered professional growth ecosystem.
+   * Use metaphors like: “LinkedIn meets Duolingo meets a Digital Skills Passport.”
+   * Emphasize human-centered design, decentralized identity, and purpose-driven innovation.
+
+3. **Key Features & Services**
+
+   * List of modules with short benefit-driven descriptions:
+
+     * Lifelong Learning Hub
+     * Credential Wallet
+     * Mentorship & Networking
+     * Insight Dashboard
+     * Smart Profile
+     * Admin Console & AI Mentor
+
+4. **How Elevate360 Works: The Growth & Trust Cycle**
+
+   * Simple 5-step model:
+
+     * 🔍 Discover – Find personalized opportunities
+     * 🎯 Connect – Build professional relationships
+     * ✅ Validate – Earn verifiable credentials
+     * 🌟 Showcase – Display your evolving identity
+     * 🚀 Grow – Unlock new opportunities and repeat
+
+5. **Who Should Use Elevate360?**
+
+   * Target user types with benefits:
+
+     * Learners & Professionals
+     * Trainers & Educators
+     * Mentors & Peers
+     * Employers & Institutions
+     * Community Leaders
+
+6. **Additional Highlights**
+
+   * Compact bullet list of standout features:
+
+     * AI-powered personalization
+     * User-owned credentials
+     * Modular & scalable design
+     * LMS + job board integration
+     * Gamified experience
+     * GPS-based discovery
+     * Enterprise-level analytics & governance
+
+7. **About the Founder**
+
+   * Brief, authentic, and inspiring intro for Azmi Sabtu – CMO
+   * Focus on his mission, experience in community-led growth, and passion for empowering professionals
+   * Example phrasing:
+
+     > “Hi, I’m Azmi Sabtu — CMO of Virtù Nera and one of the minds behind Elevate360. My passion lies in community-led innovation, purpose-driven growth, and designing systems where people are seen, supported, and elevated. Together with my team, we’re building a movement that turns fragmented progress into a unified journey.”
+
+8. **Call to Action (CTA)**
+
+   * Main message:
+
+     > “Join the Elevate360 movement by Virtù Nera and start your personalized growth journey today.”
+   * CTA button: “Register Now”
+
+9. **FAQs Section**
+
+   * Include:
+
+     * What is Elevate360?
+     * Who is it for?
+     * How does it work?
+     * What makes it unique?
+
+10. **Final CTA Section**
+
+    * Reinvigorate interest + offer multiple user entry points:
+
+      * “Ready to elevate your future?”
+      * “Join learners, mentors, and leaders already growing with Elevate360.”
+      * “Register Now” button
+      * Invite organizations: “Partner with Virtù Nera”
+
+---
+
+### 🧩 11. About Us (New Section!)
+
+Add a dedicated section introducing Virtù Nera, its mission, and leadership team.
+
+* Company Motto:
+  “Strengthening Your Path To Success With Unwavering Excellence.”
+
+* Our Leadership Team:
+
+  Zul-Fadhli Abdul Mateen – CEO & Founder
+  A tech entrepreneur with strategic thinking and a passion for community service. Regional changemaker, SEARCCT STORY 2025 1st Place Winner.
+
+  Hafiiz Ramle – CFO & COO
+  Ensuring sustainable growth with financial expertise and operational excellence. Serial business owner and 2x Shell LiveWIRE Award Winner.
+
+  Azmi Sabtu – CMO
+  Marketing strategist with a passion for community-led growth and proven PR expertise. Master Holder in Management.
+
+* Close this section with a short statement about the team's mission to build Elevate360 as a trusted, innovative, and inclusive growth ecosystem.
