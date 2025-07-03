@@ -29,13 +29,12 @@ export function Hero() {
             Unlock your potential with a modular, AI-powered professional development ecosystem that transforms how you learn, grow, and succeed.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="btn-primary px-8 py-4 rounded-full text-white font-semibold text-lg hover:shadow-lg transition-all">
+            <Button 
+              className="btn-primary px-8 py-4 rounded-full text-white font-semibold text-lg hover:shadow-lg transition-all"
+              onClick={() => window.open('https://forms.gle/M3P62bvmxqno7c436', '_blank')}
+            >
               <Rocket className="mr-2 h-5 w-5" />
-              Start Your Journey
-            </Button>
-            <Button variant="outline" className="glass-morphism px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all border-white/20">
-              <Play className="mr-2 h-5 w-5" />
-              Watch Demo
+              Register Now
             </Button>
           </div>
         </motion.div>

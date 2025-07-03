@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { motion, AnimatePresence } from "framer-motion";
+import logoPath from "@assets/logo_1751556609804.png";
 
 export function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -28,10 +29,11 @@ export function Navigation() {
         <div className="flex items-center justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0">
-              <h1 className="text-xl font-bold text-white">
-                <span className="text-blue-400">Virtù</span>{" "}
-                <span className="text-green-400">Nera</span>
-              </h1>
+              <img 
+                src={logoPath} 
+                alt="Virtù Nera" 
+                className="h-8 w-auto"
+              />
             </div>
           </div>
           

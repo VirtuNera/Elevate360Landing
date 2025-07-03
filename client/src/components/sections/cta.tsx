@@ -47,7 +47,10 @@ export function CTA() {
             Join the Elevate360 movement by Virtù Nera and start your personalized growth journey today. Connect with learners, mentors, and leaders who are already transforming their careers.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all">
+            <Button 
+              className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all"
+              onClick={() => window.open('https://forms.gle/M3P62bvmxqno7c436', '_blank')}
+            >
               <Rocket className="mr-2 h-5 w-5" />
               Register Now
             </Button>

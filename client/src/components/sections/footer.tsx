@@ -1,4 +1,5 @@
 import { Facebook, Instagram, Linkedin, Twitter } from "lucide-react";
+import logoPath from "@assets/logo_1751556609804.png";
 
 export function Footer() {
   const footerLinks = {
@@ -34,10 +35,11 @@ export function Footer() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h3 className="text-xl font-bold text-white mb-4">
-              <span className="text-blue-400">Virtù</span>{" "}
-              <span className="text-green-400">Nera</span>
-            </h3>
+            <img 
+              src={logoPath} 
+              alt="Virtù Nera" 
+              className="h-10 w-auto mb-4"
+            />
             <p className="text-white opacity-90 mb-4">
               Strengthening Your Path To Success With Unwavering Excellence.
             </p>

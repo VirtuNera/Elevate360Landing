@@ -22,9 +22,9 @@ export function Highlights() {
       color: "bg-purple-600"
     },
     {
-      icon: Gamepad2,
-      title: "Gamified Experience",
-      description: "Engaging mechanics that make learning addictive and rewarding.",
+      icon: Brain,
+      title: "Rooted in Psychology",
+      description: "Our gamified experience leverages behavioral science principles to create habit-forming learning loops that trigger dopamine release, making professional development naturally addictive and intrinsically rewarding.",
       color: "bg-yellow-600"
     },
     {
