@@ -128,6 +128,16 @@ Preferred communication style: Simple, everyday language.
   - Fixed TypeScript error in storage.ts for contact form handling
   - Maintained all original functionality including contact forms, newsletter subscription, and responsive design
 
+- **July 03, 2025**: User experience improvements and navigation updates
+  - Changed hero "Register Now" button to "Explore Now" with smooth scroll to "What is Elevate360" section
+  - Transformed key features "Learn More" buttons to expandable "Show More/Show Less" functionality with detailed descriptions and examples
+  - Removed "See it in Action" button from Growth & Trust Cycle section
+  - Removed "Partner with Virtù Nera" button from CTA section, keeping only "Start Now" button
+  - Updated contact information:
+    - Replaced website and social media with LinkedIn company link (https://www.linkedin.com/company/virt%C3%B9-nera/)
+    - Updated email addresses to: fadhli.abdulmateen@gmail.com and virtunera.nads@gmail.com
+  - Changed founder's message from CMO to CEO (Zul-Fadhli Abdul Mateen) with updated content
+
 ## Changelog
 
 - July 03, 2025. Initial setup and complete landing page customization

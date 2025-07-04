@@ -31,10 +31,10 @@ export function Hero() {
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button 
               className="btn-primary px-8 py-4 rounded-full text-white font-semibold text-lg hover:shadow-lg transition-all"
-              onClick={() => window.open('https://forms.gle/M3P62bvmxqno7c436', '_blank')}
+              onClick={scrollToNext}
             >
               <Rocket className="mr-2 h-5 w-5" />
-              Register Now
+              Explore Now
             </Button>
           </div>
         </motion.div>

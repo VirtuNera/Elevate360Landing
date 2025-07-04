@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { AnimatedSection } from "@/components/ui/animated-section";
-import { Mail, Globe, Users, Send } from "lucide-react";
+import { Mail, Linkedin, Send } from "lucide-react";
 import { useMutation } from "@tanstack/react-query";
 import { apiRequest } from "@/lib/queryClient";
 import { useToast } from "@/hooks/use-toast";
@@ -57,20 +57,17 @@ export function Contact() {
     {
       icon: Mail,
       title: "Email",
-      value: "hello@elevate360.com",
-      color: "bg-blue-600"
+      value: ["fadhli.abdulmateen@gmail.com", "virtunera.nads@gmail.com"],
+      color: "bg-blue-600",
+      isEmail: true
     },
     {
-      icon: Globe,
-      title: "Website",
-      value: "www.elevate360.com",
-      color: "bg-green-600"
-    },
-    {
-      icon: Users,
-      title: "Social Media",
-      value: "@Elevate360Official",
-      color: "bg-purple-600"
+      icon: Linkedin,
+      title: "LinkedIn",
+      value: "Virtù Nera Company",
+      link: "https://www.linkedin.com/company/virt%C3%B9-nera/",
+      color: "bg-blue-700",
+      isLink: true
     }
   ];
 
@@ -92,13 +89,30 @@ export function Contact() {
             <h3 className="text-2xl font-semibold text-white mb-8">Contact Information</h3>
             <div className="space-y-6">
               {contactInfo.map((info) => (
-                <div key={info.title} className="flex items-center">
-                  <div className={`${info.color} rounded-full w-12 h-12 flex items-center justify-center mr-4`}>
+                <div key={info.title} className="flex items-start">
+                  <div className={`${info.color} rounded-full w-12 h-12 flex items-center justify-center mr-4 mt-1`}>
                     <info.icon className="h-6 w-6 text-white" />
                   </div>
                   <div>
-                    <p className="text-white font-semibold">{info.title}</p>
-                    <p className="text-white opacity-90">{info.value}</p>
+                    <p className="text-white font-semibold mb-1">{info.title}</p>
+                    {info.isEmail ? (
+                      <div className="space-y-1">
+                        {(info.value as string[]).map((email, index) => (
+                          <p key={index} className="text-white opacity-90 text-sm">{email}</p>
+                        ))}
+                      </div>
+                    ) : info.isLink ? (
+                      <a 
+                        href={info.link} 
+                        target="_blank" 
+                        rel="noopener noreferrer"
+                        className="text-blue-400 hover:text-blue-300 transition-colors underline"
+                      >
+                        {info.value as string}
+                      </a>
+                    ) : (
+                      <p className="text-white opacity-90">{info.value as string}</p>
+                    )}
                   </div>
                 </div>
               ))}

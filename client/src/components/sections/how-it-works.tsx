@@ -57,12 +57,7 @@ export function HowItWorks() {
           ))}
         </div>
         
-        <div className="text-center mt-16">
-          <Button className="bg-white text-blue-600 px-8 py-4 rounded-full font-semibold text-lg hover:bg-gray-100 transition-all">
-            <Rocket className="mr-2 h-5 w-5" />
-            See It In Action
-          </Button>
-        </div>
+
       </div>
     </section>
   );

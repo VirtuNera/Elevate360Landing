@@ -52,11 +52,7 @@ export function CTA() {
               onClick={() => window.open('https://forms.gle/M3P62bvmxqno7c436', '_blank')}
             >
               <Rocket className="mr-2 h-5 w-5" />
-              Register Now
-            </Button>
-            <Button variant="outline" className="glass-morphism px-8 py-4 rounded-full text-white font-semibold text-lg hover:bg-white hover:text-gray-900 transition-all border-white/20">
-              <Handshake className="mr-2 h-5 w-5" />
-              Partner with Virtù Nera
+              Start Now
             </Button>
           </div>
           <div className="glass-morphism p-8 rounded-2xl max-w-2xl mx-auto">

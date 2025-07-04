@@ -137,9 +137,9 @@ export function AboutUs() {
         
         <AnimatedSection className="text-center mt-16">
           <div className="glass-morphism p-8 rounded-2xl max-w-4xl mx-auto">
-            <h3 className="text-2xl font-semibold text-white mb-4">Our Founder's Message</h3>
+            <h3 className="text-2xl font-semibold text-white mb-4">Our CEO's Message</h3>
             <p className="text-white opacity-90 text-lg italic">
-              "Hi, I'm Azmi Sabtu — CMO of Virtù Nera and one of the minds behind Elevate360. My passion lies in community-led innovation, purpose-driven growth, and designing systems where people are seen, supported, and elevated. Together with my team, we're building a movement that turns fragmented progress into a unified journey."
+              "Hi, I'm Zul-Fadhli Abdul Mateen — CEO & Founder of Virtù Nera and the visionary behind Elevate360. As a tech entrepreneur with a passion for community service and strategic innovation, I believe in creating systems that truly elevate human potential. Our mission is to build a movement that transforms fragmented professional growth into a unified, empowering journey for everyone."
             </p>
           </div>
         </AnimatedSection>
