@@ -31,7 +31,7 @@ export function AboutUs() {
 
 
   return (
-    <section id="about" className="py-20" style={{ background: 'linear-gradient(135deg, var(--virtu-dark-blue), var(--virtu-accent))' }}>
+    <section id="about" className="py-20" style={{ background: 'linear-gradient(135deg, var(--virtu-deep-blue), var(--virtu-dark-blue), var(--virtu-accent))' }}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <AnimatedSection className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">

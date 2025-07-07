@@ -30,10 +30,12 @@
   --chart-5: hsl(27, 87%, 67%);
   
   /* Custom Virtù Nera Theme Colors */
-  --virtu-cyan: hsl(188, 65%, 75%);
-  --virtu-dark-blue: hsl(222, 50%, 35%);
-  --virtu-light-blue: hsl(200, 80%, 85%);
-  --virtu-accent: hsl(188, 60%, 50%);
+  --virtu-cyan: hsl(188, 45%, 65%);
+  --virtu-dark-blue: hsl(222, 35%, 45%);
+  --virtu-light-blue: hsl(200, 60%, 80%);
+  --virtu-accent: hsl(188, 40%, 55%);
+  --virtu-soft-cyan: hsl(188, 30%, 85%);
+  --virtu-deep-blue: hsl(222, 45%, 25%);
   --dark-gray: hsl(215, 28%, 17%);
   --light-gray: hsl(210, 40%, 98%);
 }
@@ -88,12 +90,13 @@
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, var(--virtu-dark-blue) 0%, var(--virtu-accent) 50%, var(--virtu-cyan) 100%);
+    background: linear-gradient(135deg, var(--virtu-deep-blue) 0%, var(--virtu-dark-blue) 40%, var(--virtu-accent) 80%, var(--virtu-cyan) 100%);
   }
   
   .btn-primary {
     background: linear-gradient(135deg, var(--virtu-dark-blue), var(--virtu-accent));
     transition: all 0.3s ease;
+    border: 1px solid rgba(255, 255, 255, 0.1);
   }
   
   .btn-primary:hover {
@@ -140,7 +143,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, var(--virtu-dark-blue), var(--virtu-accent), var(--virtu-cyan), var(--virtu-light-blue));
+    background: linear-gradient(45deg, var(--virtu-deep-blue), var(--virtu-dark-blue), var(--virtu-accent), var(--virtu-soft-cyan));
     border-radius: inherit;
     animation: rotate 3s linear infinite;
     z-index: -1;
