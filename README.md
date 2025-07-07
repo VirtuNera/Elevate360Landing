@@ -55,9 +55,13 @@ npm start
 - Use the included `vercel.json` configuration
 - Connect your repository for automatic deployments
 
-### Netlify
+### Netlify (Recommended)
 - Use the included `netlify.toml` configuration
+- Serverless functions are optimized for Netlify's platform
 - Connect your repository for automatic deployments
+- Functions will be deployed to `/.netlify/functions/`
+- Contact form: `/.netlify/functions/contact`
+- Newsletter: `/.netlify/functions/newsletter`
 
 ### Docker
 - Use the included `Dockerfile` for containerized deployment
