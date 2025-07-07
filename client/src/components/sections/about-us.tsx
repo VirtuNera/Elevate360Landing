@@ -1,4 +1,7 @@
 import { AnimatedSection } from "@/components/ui/animated-section";
+import sirFadImage from "@assets/sir_fad_1751855714092.jpg";
+import sirHafizImage from "@assets/sir_hafiz_1751855714091.jpg";
+import sirSpaxImage from "@assets/sir_spax_1751855714082.jpg";
 
 export function AboutUs() {
   const leaders = [
@@ -6,21 +9,21 @@ export function AboutUs() {
       name: "Zul-Fadhli Abdul Mateen",
       role: "CEO & Founder",
       description: "A tech entrepreneur with strategic thinking and a passion for community service. Regional changemaker and SEARCCT STORY 2025 1st Place Winner.",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+      image: sirFadImage,
       roleColor: "text-green-400"
     },
     {
-      name: "Hafiiz Ramle",
+      name: "Hafiiz Ramlee",
       role: "CFO & COO",
       description: "Ensuring sustainable growth with financial expertise and operational excellence. Serial business owner and 2x Shell LiveWIRE Award Winner.",
-      image: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+      image: sirHafizImage,
       roleColor: "text-yellow-400"
     },
     {
       name: "Azmi Sabtu",
       role: "CMO",
       description: "Marketing strategist with a passion for community-led growth and proven PR expertise. Master Holder in Management and the visionary behind Elevate360.",
-      image: "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=400&h=400",
+      image: sirSpaxImage,
       roleColor: "text-purple-400"
     }
   ];

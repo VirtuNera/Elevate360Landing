@@ -138,6 +138,14 @@ Preferred communication style: Simple, everyday language.
     - Updated email addresses to: fadhli.abdulmateen@gmail.com and virtunera.nads@gmail.com
   - Changed founder's message from CMO to CEO (Zul-Fadhli Abdul Mateen) with updated content
 
+- **July 07, 2025**: Replaced placeholder team photos with actual leadership images
+  - Added real photos of leadership team in About Us section:
+    - Zul-Fadhli Abdul Mateen (CEO & Founder) - sir_fad image
+    - Hafiiz Ramlee (CFO & COO) - sir_hafiz image  
+    - Azmi Sabtu (CMO) - sir_spax image
+  - Fixed name spelling for Hafiiz Ramlee
+  - Implemented proper asset importing for JPG files through file copying with lowercase extensions
+
 ## Changelog
 
 - July 03, 2025. Initial setup and complete landing page customization
