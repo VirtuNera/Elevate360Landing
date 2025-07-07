@@ -190,6 +190,15 @@ Preferred communication style: Simple, everyday language.
     - Applied consistent styling to section indicator with matching gradients
   - Adjusted home page background colors to reduce clashing with navigation bar while maintaining visual appeal
 
+- **July 07, 2025**: Content cleanup and footer simplification
+  - Removed unnecessary footer sections (Platform, Community, Support links)
+  - Removed social media icons (Instagram, Facebook, Twitter, LinkedIn icons)
+  - Removed team photo placeholder section from About Us
+  - Simplified footer to focus on essential contact information:
+    - Centralized layout with Virtù Nera logo and mission statement
+    - Direct email contacts and LinkedIn company page link
+    - Clean copyright notice
+
 ## Changelog
 
 - July 03, 2025. Initial setup and complete landing page customization

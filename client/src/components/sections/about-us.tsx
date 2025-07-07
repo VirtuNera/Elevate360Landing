@@ -66,23 +66,7 @@ export function AboutUs() {
 
 
 
-        {/* Group Photo */}
-        <AnimatedSection className="mb-16">
-          <h3 className="text-3xl font-bold text-white mb-8 text-center">Team Photo</h3>
-          <div className="glass-morphism p-8 rounded-2xl text-center">
-            <div className="w-full h-64 bg-gradient-to-r from-cyan-400/20 to-blue-600/20 rounded-xl flex items-center justify-center border-2 border-dashed border-white/30">
-              <div className="text-center">
-                <div className="w-16 h-16 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
-                  <svg className="w-8 h-8 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z" />
-                  </svg>
-                </div>
-                <p className="text-white opacity-90 text-lg font-medium">Virtù Nera Team Photo</p>
-                <p className="text-white opacity-70 text-sm mt-2">Our amazing team working together to build the future of professional development</p>
-              </div>
-            </div>
-          </div>
-        </AnimatedSection>
+
         
         <AnimatedSection className="text-center mt-16">
           <div className="glass-morphism p-8 rounded-2xl max-w-4xl mx-auto">
