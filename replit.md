@@ -18,8 +18,9 @@ This is a modern landing page application for Elevate360, a professional develop
 
 ### Backend Architecture
 - **Framework**: Express.js with TypeScript
-- **Database**: PostgreSQL with Drizzle ORM
+- **Database**: PostgreSQL with Drizzle ORM (Active)
 - **Database Provider**: Neon Database (serverless PostgreSQL)
+- **Storage**: DatabaseStorage class implementing IStorage interface
 - **API Design**: RESTful endpoints for contact forms and newsletter subscriptions
 - **Validation**: Zod schemas shared between frontend and backend
 - **Development**: Hot module replacement with Vite integration
@@ -145,6 +146,13 @@ Preferred communication style: Simple, everyday language.
     - Azmi Sabtu (CMO) - sir_spax image
   - Fixed name spelling for Hafiiz Ramlee
   - Implemented proper asset importing for JPG files through file copying with lowercase extensions
+
+- **July 07, 2025**: Added PostgreSQL database integration
+  - Created PostgreSQL database with Neon Database provider
+  - Implemented `DatabaseStorage` class replacing in-memory storage
+  - Added `server/db.ts` with Drizzle ORM configuration
+  - Successfully pushed database schema with tables for users, contacts, and newsletters
+  - All contact form submissions and newsletter subscriptions now persist in database
 
 ## Changelog
 
