@@ -1,17 +1,12 @@
-import { useState } from "react";
-import { Menu, X } from "lucide-react";
-import { Button } from "@/components/ui/button";
-import { motion, AnimatePresence } from "framer-motion";
 import logoPath from "@assets/logo_1751556609804.png";
 
 export function Navigation() {
-  const [isOpen, setIsOpen] = useState(false);
-
   const navItems = [
     { href: "#home", label: "Home" },
-    { href: "#about", label: "About" },
+    { href: "#what-is", label: "What is Elevate360" },
     { href: "#features", label: "Features" },
     { href: "#how-it-works", label: "How It Works" },
+    { href: "#about", label: "About Us" },
     { href: "#contact", label: "Contact" }
   ];
 
@@ -19,7 +14,6 @@ export function Navigation() {
     const element = document.querySelector(href);
     if (element) {
       element.scrollIntoView({ behavior: "smooth", block: "start" });
-      setIsOpen(false);
     }
   };
 
@@ -37,55 +31,21 @@ export function Navigation() {
             </div>
           </div>
           
-          <div className="hidden md:block">
-            <div className="ml-10 flex items-baseline space-x-8">
-              {navItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className="text-white hover:text-green-400 transition-colors"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-          </div>
-          
-          <div className="md:hidden">
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={() => setIsOpen(!isOpen)}
-              className="text-white hover:text-green-400"
-            >
-              {isOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
-            </Button>
+          {/* Always visible navigation labels */}
+          <div className="flex items-center space-x-4 lg:space-x-6">
+            {navItems.map((item) => (
+              <button
+                key={item.href}
+                onClick={() => scrollToSection(item.href)}
+                className="text-white hover:text-cyan-300 transition-colors text-xs sm:text-sm font-medium whitespace-nowrap"
+                style={{ color: 'hsl(188, 100%, 85%)' }}
+              >
+                {item.label}
+              </button>
+            ))}
           </div>
         </div>
       </div>
-
-      <AnimatePresence>
-        {isOpen && (
-          <motion.div
-            initial={{ opacity: 0, height: 0 }}
-            animate={{ opacity: 1, height: "auto" }}
-            exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-gray-800"
-          >
-            <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
-              {navItems.map((item) => (
-                <button
-                  key={item.href}
-                  onClick={() => scrollToSection(item.href)}
-                  className="block px-3 py-2 text-white hover:text-green-400 transition-colors w-full text-left"
-                >
-                  {item.label}
-                </button>
-              ))}
-            </div>
-          </motion.div>
-        )}
-      </AnimatePresence>
     </nav>
   );
 }

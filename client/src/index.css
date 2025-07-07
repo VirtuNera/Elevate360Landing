@@ -29,11 +29,11 @@
   --chart-4: hsl(43, 74%, 66%);
   --chart-5: hsl(27, 87%, 67%);
   
-  /* Custom Elevate360 Colors */
-  --primary-blue: hsl(221, 83%, 53%);
-  --primary-green: hsl(158, 64%, 52%);
-  --innovation-purple: hsl(258, 90%, 66%);
-  --warm-accent: hsl(43, 96%, 56%);
+  /* Custom Virtù Nera Theme Colors */
+  --virtu-cyan: hsl(188, 100%, 85%);
+  --virtu-dark-blue: hsl(222, 84%, 20%);
+  --virtu-light-blue: hsl(200, 100%, 90%);
+  --virtu-accent: hsl(188, 80%, 60%);
   --dark-gray: hsl(215, 28%, 17%);
   --light-gray: hsl(210, 40%, 98%);
 }
@@ -88,16 +88,17 @@
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, hsl(221, 83%, 53%) 0%, hsl(158, 64%, 52%) 50%, hsl(258, 90%, 66%) 100%);
+    background: linear-gradient(135deg, var(--virtu-dark-blue) 0%, var(--virtu-accent) 50%, var(--virtu-cyan) 100%);
   }
   
   .btn-primary {
-    background: linear-gradient(135deg, hsl(221, 83%, 53%), hsl(158, 64%, 52%));
+    background: linear-gradient(135deg, var(--virtu-dark-blue), var(--virtu-accent));
     transition: all 0.3s ease;
   }
   
   .btn-primary:hover {
     transform: translateY(-2px);
+    background: linear-gradient(135deg, var(--virtu-accent), var(--virtu-cyan));
     box-shadow: 0 10px 25px rgba(30, 64, 175, 0.3);
   }
   
@@ -139,7 +140,7 @@
     left: -2px;
     right: -2px;
     bottom: -2px;
-    background: linear-gradient(45deg, hsl(221, 83%, 53%), hsl(158, 64%, 52%), hsl(258, 90%, 66%), hsl(43, 96%, 56%));
+    background: linear-gradient(45deg, var(--virtu-dark-blue), var(--virtu-accent), var(--virtu-cyan), var(--virtu-light-blue));
     border-radius: inherit;
     animation: rotate 3s linear infinite;
     z-index: -1;

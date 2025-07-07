@@ -20,7 +20,7 @@ export function Hero() {
           transition={{ duration: 0.8 }}
         >
           <h1 className="text-5xl md:text-7xl font-bold text-white mb-6">
-            Elevate<span className="text-yellow-400">360</span>
+            Elevate360
           </h1>
           <p className="text-xl md:text-2xl text-white mb-4 font-light">
             The Future of Professional Growth
