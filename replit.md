@@ -220,6 +220,19 @@ Preferred communication style: Simple, everyday language.
   - Removed database dependency for Netlify functions (uses logging instead)
   - Maintained full website functionality with optimized serverless architecture
 
+- **July 07, 2025**: Static website restructure for Netlify deployment
+  - Restructured project for static deployment without build step:
+    - Moved index.html to root level with CDN-based dependencies
+    - Created static CSS file with all custom styles and Virtù Nera theme
+    - Converted React components to vanilla JavaScript using React CDN
+    - Organized assets in root-level folders (assets/, css/, js/)
+    - Maintained all original functionality and design
+  - Added 404.html for SPA routing support
+  - Updated netlify.toml for static deployment configuration
+  - Enhanced _headers file with proper caching and security headers
+  - Simplified serverless functions with minimal dependencies
+  - Website now deployable on Netlify without any build process
+
 ## Changelog
 
 - July 03, 2025. Initial setup and complete landing page customization
