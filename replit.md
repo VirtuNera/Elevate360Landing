@@ -167,6 +167,16 @@ Preferred communication style: Simple, everyday language.
     - Removed mobile hamburger menu - all navigation visible on all screen sizes
     - Updated navigation colors to match cyan theme
 
+- **July 07, 2025**: Enhanced navigation and UX improvements
+  - Shortened "Rooted in Psychology" description to be more concise while maintaining message impact
+  - Refined color scheme to reduce clashing while maintaining complementary Virtù Nera colors
+  - Implemented new navigation design:
+    - Moved Virtù Nera logo to top center position
+    - Added smaller navigation bar below logo with active section highlighting
+    - Created transparent section indicator in bottom right corner showing current section
+    - Added smooth scroll-based section detection for both navigation and indicator
+  - Updated hero section padding to accommodate new navigation structure
+
 ## Changelog
 
 - July 03, 2025. Initial setup and complete landing page customization

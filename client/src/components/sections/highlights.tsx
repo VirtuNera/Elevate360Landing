@@ -24,7 +24,7 @@ export function Highlights() {
     {
       icon: Brain,
       title: "Rooted in Psychology",
-      description: "Our gamified experience leverages behavioral science principles to create habit-forming learning loops that trigger dopamine release, making professional development naturally addictive and intrinsically rewarding.",
+      description: "Uses behavioral science to create engaging, habit-forming learning experiences that make professional development naturally rewarding.",
       color: "bg-yellow-600"
     },
     {

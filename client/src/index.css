@@ -30,10 +30,10 @@
   --chart-5: hsl(27, 87%, 67%);
   
   /* Custom Virtù Nera Theme Colors */
-  --virtu-cyan: hsl(188, 100%, 85%);
-  --virtu-dark-blue: hsl(222, 84%, 20%);
-  --virtu-light-blue: hsl(200, 100%, 90%);
-  --virtu-accent: hsl(188, 80%, 60%);
+  --virtu-cyan: hsl(188, 65%, 75%);
+  --virtu-dark-blue: hsl(222, 50%, 35%);
+  --virtu-light-blue: hsl(200, 80%, 85%);
+  --virtu-accent: hsl(188, 60%, 50%);
   --dark-gray: hsl(215, 28%, 17%);
   --light-gray: hsl(210, 40%, 98%);
 }

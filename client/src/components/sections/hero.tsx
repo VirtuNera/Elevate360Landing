@@ -11,7 +11,7 @@ export function Hero() {
   };
 
   return (
-    <section id="home" className="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section id="home" className="hero-gradient min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
       <div className="absolute inset-0 bg-black bg-opacity-30"></div>
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <motion.div

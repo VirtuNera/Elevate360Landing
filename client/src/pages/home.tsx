@@ -1,4 +1,5 @@
-import { Navigation } from "@/components/navigation";
+import { NewNavigation } from "@/components/new-navigation";
+import { SectionIndicator } from "@/components/section-indicator";
 import { Hero } from "@/components/sections/hero";
 import { WhatIsElevate360 } from "@/components/sections/what-is-elevate360";
 import { KeyFeatures } from "@/components/sections/key-features";
@@ -14,7 +15,8 @@ import { Footer } from "@/components/sections/footer";
 export default function Home() {
   return (
     <div className="min-h-screen bg-white">
-      <Navigation />
+      <NewNavigation />
+      <SectionIndicator />
       <Hero />
       <WhatIsElevate360 />
       <KeyFeatures />
