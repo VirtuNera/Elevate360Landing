@@ -90,11 +90,11 @@
   }
   
   .hero-gradient {
-    background: linear-gradient(135deg, var(--virtu-deep-blue) 0%, var(--virtu-dark-blue) 40%, var(--virtu-accent) 80%, var(--virtu-cyan) 100%);
+    background: linear-gradient(135deg, hsl(222, 45%, 15%) 0%, hsl(222, 40%, 25%) 30%, var(--virtu-accent) 70%, var(--virtu-soft-cyan) 100%);
   }
   
   .btn-primary {
-    background: linear-gradient(135deg, var(--virtu-dark-blue), var(--virtu-accent));
+    background: linear-gradient(135deg, hsl(222, 40%, 25%), var(--virtu-accent));
     transition: all 0.3s ease;
     border: 1px solid rgba(255, 255, 255, 0.1);
   }

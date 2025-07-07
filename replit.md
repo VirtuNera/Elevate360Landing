@@ -188,6 +188,7 @@ Preferred communication style: Simple, everyday language.
     - Added gradient backgrounds to logo container and navigation bar
     - Enhanced active section highlighting with gradient effects and shadows
     - Applied consistent styling to section indicator with matching gradients
+  - Adjusted home page background colors to reduce clashing with navigation bar while maintaining visual appeal
 
 ## Changelog
 
