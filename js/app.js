@@ -64,7 +64,7 @@ function Navigation({ currentSection, scrollToSection }) {
     // Logo Container
     React.createElement('div', {
       key: 'logo-container',
-      className: 'flex justify-center py-4',
+      className: 'flex justify-center py-3 md:py-4',
       style: {
         background: 'linear-gradient(90deg, rgba(100, 200, 255, 0.15) 0%, rgba(147, 51, 234, 0.15) 50%, rgba(100, 200, 255, 0.15) 100%)',
         backdropFilter: 'blur(10px)',
@@ -74,14 +74,14 @@ function Navigation({ currentSection, scrollToSection }) {
       React.createElement('img', {
         src: '/assets/logo_1751556609804.png',
         alt: 'Virtù Nera',
-        className: 'h-12 w-auto'
+        className: 'h-10 md:h-12 w-auto'
       })
     ),
     
     // Navigation Bar
     React.createElement('div', {
       key: 'nav-bar',
-      className: 'px-4 py-3',
+      className: 'px-2 md:px-4 py-2 md:py-3',
       style: {
         background: 'linear-gradient(90deg, rgba(100, 200, 255, 0.2) 0%, rgba(147, 51, 234, 0.2) 50%, rgba(100, 200, 255, 0.2) 100%)',
         backdropFilter: 'blur(10px)',
@@ -89,12 +89,12 @@ function Navigation({ currentSection, scrollToSection }) {
       }
     },
       React.createElement('div', { className: 'max-w-6xl mx-auto' },
-        React.createElement('nav', { className: 'flex justify-center space-x-8' },
+        React.createElement('nav', { className: 'flex justify-center space-x-2 md:space-x-8 mobile-nav-scroll overflow-x-auto pb-1' },
           navItems.map(item => 
             React.createElement('button', {
               key: item.id,
               onClick: () => scrollToSection(item.id),
-              className: `px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 ${
+              className: `mobile-touch-target px-3 md:px-4 py-2 rounded-lg text-xs md:text-sm font-medium transition-all duration-300 whitespace-nowrap ${
                 currentSection === item.id 
                   ? 'bg-gradient-to-r from-cyan-400 to-purple-400 text-white shadow-lg' 
                   : 'text-white hover:bg-white/10'
@@ -133,20 +133,20 @@ function Hero({ scrollToSection }) {
     React.createElement('div', { key: 'bg-elements', className: 'absolute inset-0 overflow-hidden' }, [
       React.createElement('div', {
         key: 'bg-1',
-        className: 'absolute top-1/4 left-1/4 w-64 h-64 bg-gradient-to-r from-cyan-400/20 to-purple-600/20 rounded-full animate-float'
+        className: 'absolute top-1/4 left-1/4 w-32 md:w-64 h-32 md:h-64 bg-gradient-to-r from-cyan-400/20 to-purple-600/20 rounded-full animate-float'
       }),
       React.createElement('div', {
         key: 'bg-2',
-        className: 'absolute bottom-1/4 right-1/4 w-48 h-48 bg-gradient-to-r from-purple-400/20 to-cyan-600/20 rounded-full animate-float',
+        className: 'absolute bottom-1/4 right-1/4 w-24 md:w-48 h-24 md:h-48 bg-gradient-to-r from-purple-400/20 to-cyan-600/20 rounded-full animate-float',
         style: { animationDelay: '1s' }
       })
     ]),
     
-    React.createElement('div', { key: 'content', className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10' }, [
+    React.createElement('div', { key: 'content', className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center relative z-10 mobile-hero-spacing' }, [
       React.createElement('div', { key: 'hero-content', className: 'animate-fade-in-up' }, [
         React.createElement('h1', {
           key: 'title',
-          className: 'text-6xl md:text-8xl font-bold mb-8'
+          className: 'text-4xl md:text-6xl lg:text-8xl font-bold mb-6 md:mb-8 small-mobile-title mobile-text-balance'
         }, [
           React.createElement('span', { key: 'elevate', className: 'text-white' }, 'Elevate'),
           React.createElement('span', { key: 'number', className: 'text-white' }, '360')
@@ -154,17 +154,17 @@ function Hero({ scrollToSection }) {
         
         React.createElement('p', {
           key: 'subtitle',
-          className: 'text-xl md:text-2xl text-white opacity-90 mb-8 max-w-4xl mx-auto leading-relaxed'
+          className: 'text-lg md:text-xl lg:text-2xl text-white opacity-90 mb-6 md:mb-8 max-w-4xl mx-auto leading-relaxed small-mobile-subtitle mobile-text-balance'
         }, 'The Ultimate Professional Development Ecosystem. Built for Professionals. Powered by Innovation. Driven by Purpose.'),
         
         React.createElement('div', {
           key: 'buttons',
-          className: 'flex flex-col sm:flex-row gap-4 justify-center items-center mt-12'
+          className: 'flex flex-col sm:flex-row gap-4 justify-center items-center mt-8 md:mt-12 mobile-button-stack'
         }, [
           React.createElement('button', {
             key: 'explore-btn',
             onClick: () => scrollToSection('what-is-elevate360'),
-            className: 'btn-primary px-8 py-4 rounded-xl text-white font-semibold text-lg shadow-2xl hover:shadow-3xl transition-all duration-300'
+            className: 'btn-primary mobile-button-full small-mobile-button px-6 md:px-8 py-3 md:py-4 rounded-xl text-white font-semibold text-base md:text-lg shadow-2xl hover:shadow-3xl transition-all duration-300'
           }, 'Explore Now'),
           
           React.createElement('a', {
@@ -172,7 +172,7 @@ function Hero({ scrollToSection }) {
             href: 'https://forms.gle/M3P62bvmxqno7c436',
             target: '_blank',
             rel: 'noopener noreferrer',
-            className: 'glass-morphism px-8 py-4 rounded-xl text-white font-semibold text-lg hover:bg-white/20 transition-all duration-300'
+            className: 'glass-morphism mobile-button-full small-mobile-button px-6 md:px-8 py-3 md:py-4 rounded-xl text-white font-semibold text-base md:text-lg hover:bg-white/20 transition-all duration-300'
           }, 'Register Now')
         ])
       ])
@@ -184,22 +184,22 @@ function Hero({ scrollToSection }) {
 function WhatIsElevate360() {
   return React.createElement('section', {
     id: 'what-is-elevate360',
-    className: 'py-20 bg-gray-50'
+    className: 'py-20 md:py-20 bg-gray-50 mobile-section-spacing small-mobile-spacing'
   },
     React.createElement('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' }, [
-      React.createElement('div', { key: 'header', className: 'text-center mb-16 animate-fade-in-up' }, [
+      React.createElement('div', { key: 'header', className: 'text-center mb-12 md:mb-16 animate-fade-in-up' }, [
         React.createElement('h2', {
           key: 'title',
-          className: 'text-4xl md:text-5xl font-bold text-gray-900 mb-6'
+          className: 'text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6 mobile-text-balance'
         }, 'What is Elevate360?'),
         
         React.createElement('p', {
           key: 'description',
-          className: 'text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed'
+          className: 'text-lg md:text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed mobile-text-balance'
         }, 'Elevate360 is a revolutionary modular ecosystem that transforms professional development through integrated learning, credentialing, mentorship, and networking—all powered by cutting-edge AI technology.')
       ]),
       
-      React.createElement('div', { key: 'features', className: 'grid md:grid-cols-3 gap-8' },
+      React.createElement('div', { key: 'features', className: 'grid grid-cols-1 md:grid-cols-3 gap-6 md:gap-8' },
         [
           {
             icon: '🎯',
@@ -219,19 +219,19 @@ function WhatIsElevate360() {
         ].map((feature, index) =>
           React.createElement('div', {
             key: index,
-            className: 'text-center p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300'
+            className: 'text-center p-6 md:p-8 bg-white rounded-2xl shadow-lg hover:shadow-xl transition-all duration-300 mobile-card-enhanced small-mobile-card'
           }, [
             React.createElement('div', {
               key: 'icon',
-              className: 'text-6xl mb-4'
+              className: 'text-5xl md:text-6xl mb-4'
             }, feature.icon),
             React.createElement('h3', {
               key: 'title',
-              className: 'text-2xl font-bold text-gray-900 mb-4'
+              className: 'text-xl md:text-2xl font-bold text-gray-900 mb-4'
             }, feature.title),
             React.createElement('p', {
               key: 'description',
-              className: 'text-gray-600 leading-relaxed'
+              className: 'text-gray-600 leading-relaxed text-sm md:text-base'
             }, feature.description)
           ])
         )
@@ -285,51 +285,51 @@ function KeyFeatures() {
 
   return React.createElement('section', {
     id: 'features',
-    className: 'py-20 bg-white'
+    className: 'py-12 md:py-20 bg-white section-mobile-padding section-xs-padding'
   },
     React.createElement('div', { className: 'max-w-7xl mx-auto px-4 sm:px-6 lg:px-8' }, [
-      React.createElement('div', { key: 'header', className: 'text-center mb-16' }, [
+      React.createElement('div', { key: 'header', className: 'text-center mb-12 md:mb-16' }, [
         React.createElement('h2', {
           key: 'title',
-          className: 'text-4xl md:text-5xl font-bold text-gray-900 mb-6'
+          className: 'text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6'
         }, 'Key Features'),
         
         React.createElement('p', {
           key: 'description',
-          className: 'text-xl text-gray-600 max-w-3xl mx-auto'
+          className: 'text-lg md:text-xl text-gray-600 max-w-3xl mx-auto'
         }, 'Discover the powerful features that make Elevate360 the ultimate professional development platform.')
       ]),
       
-      React.createElement('div', { key: 'features-grid', className: 'grid md:grid-cols-2 lg:grid-cols-3 gap-8' },
+      React.createElement('div', { key: 'features-grid', className: 'grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8 grid-mobile-single' },
         features.map((feature, index) =>
           React.createElement('div', {
             key: index,
-            className: 'bg-gray-50 p-8 rounded-2xl hover:shadow-lg transition-all duration-300'
+            className: 'bg-gray-50 p-6 md:p-8 rounded-2xl hover:shadow-lg transition-all duration-300 card-mobile-padding card-xs-padding'
           }, [
             React.createElement('div', {
               key: 'icon',
-              className: 'text-5xl mb-4'
+              className: 'text-4xl md:text-5xl mb-4'
             }, feature.icon),
             
             React.createElement('h3', {
               key: 'title',
-              className: 'text-2xl font-bold text-gray-900 mb-4'
+              className: 'text-xl md:text-2xl font-bold text-gray-900 mb-4'
             }, feature.title),
             
             React.createElement('p', {
               key: 'description',
-              className: 'text-gray-600 mb-4'
+              className: 'text-gray-600 mb-4 text-sm md:text-base'
             }, feature.description),
             
             expandedFeature === index && React.createElement('p', {
               key: 'details',
-              className: 'text-gray-700 text-sm leading-relaxed mb-4'
+              className: 'text-gray-700 text-xs md:text-sm leading-relaxed mb-4'
             }, feature.details),
             
             React.createElement('button', {
               key: 'toggle-btn',
               onClick: () => setExpandedFeature(expandedFeature === index ? null : index),
-              className: 'text-blue-600 hover:text-blue-800 font-medium text-sm transition-colors'
+              className: 'text-blue-600 hover:text-blue-800 font-medium text-xs md:text-sm transition-colors'
             }, expandedFeature === index ? 'Show Less' : 'Show More')
           ])
         )
@@ -882,26 +882,26 @@ function Contact() {
 
   return React.createElement('section', {
     id: 'contact',
-    className: 'py-20 bg-gray-50'
+    className: 'py-20 md:py-20 bg-gray-50 mobile-section-spacing small-mobile-spacing'
   },
     React.createElement('div', { className: 'max-w-4xl mx-auto px-4 sm:px-6 lg:px-8' }, [
-      React.createElement('div', { key: 'header', className: 'text-center mb-16' }, [
+      React.createElement('div', { key: 'header', className: 'text-center mb-12 md:mb-16' }, [
         React.createElement('h2', {
           key: 'title',
-          className: 'text-4xl md:text-5xl font-bold text-gray-900 mb-6'
+          className: 'text-3xl md:text-4xl lg:text-5xl font-bold text-gray-900 mb-4 md:mb-6'
         }, 'Get in Touch'),
         
         React.createElement('p', {
           key: 'description',
-          className: 'text-xl text-gray-600'
+          className: 'text-lg md:text-xl text-gray-600'
         }, 'Have questions about Elevate360? We\'d love to hear from you.')
       ]),
       
-      React.createElement('div', { key: 'content', className: 'grid md:grid-cols-2 gap-12' }, [
+      React.createElement('div', { key: 'content', className: 'grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12' }, [
         React.createElement('div', { key: 'info' }, [
           React.createElement('h3', {
             key: 'info-title',
-            className: 'text-2xl font-bold text-gray-900 mb-6'
+            className: 'text-xl md:text-2xl font-bold text-gray-900 mb-4 md:mb-6'
           }, 'Contact Information'),
           
           React.createElement('div', { key: 'contact-details', className: 'space-y-4' }, [
@@ -910,16 +910,16 @@ function Contact() {
                 key: 'email-title',
                 className: 'font-semibold text-gray-900 mb-2'
               }, 'Email'),
-              React.createElement('p', { key: 'email1', className: 'text-gray-600' },
+              React.createElement('p', { key: 'email1', className: 'text-gray-600 text-sm md:text-base break-words' },
                 React.createElement('a', {
                   href: 'mailto:fadhli.abdulmateen@gmail.com',
-                  className: 'hover:text-blue-600 transition-colors'
+                  className: 'hover:text-blue-600 transition-colors mobile-touch-target'
                 }, 'fadhli.abdulmateen@gmail.com')
               ),
-              React.createElement('p', { key: 'email2', className: 'text-gray-600' },
+              React.createElement('p', { key: 'email2', className: 'text-gray-600 text-sm md:text-base break-words' },
                 React.createElement('a', {
                   href: 'mailto:virtunera.nads@gmail.com',
-                  className: 'hover:text-blue-600 transition-colors'
+                  className: 'hover:text-blue-600 transition-colors mobile-touch-target'
                 }, 'virtunera.nads@gmail.com')
               )
             ]),
@@ -929,12 +929,12 @@ function Contact() {
                 key: 'linkedin-title',
                 className: 'font-semibold text-gray-900 mb-2'
               }, 'LinkedIn'),
-              React.createElement('p', { key: 'linkedin-link', className: 'text-gray-600' },
+              React.createElement('p', { key: 'linkedin-link', className: 'text-gray-600 text-sm md:text-base' },
                 React.createElement('a', {
                   href: 'https://www.linkedin.com/company/virt%C3%B9-nera/',
                   target: '_blank',
                   rel: 'noopener noreferrer',
-                  className: 'hover:text-blue-600 transition-colors'
+                  className: 'hover:text-blue-600 transition-colors mobile-touch-target'
                 }, 'LinkedIn Company Page')
               )
             ])
@@ -945,7 +945,7 @@ function Contact() {
           React.createElement('form', {
             key: 'contact-form',
             onSubmit: handleSubmit,
-            className: 'space-y-6'
+            className: 'space-y-4 md:space-y-6 mobile-form-enhanced'
           }, [
             React.createElement('div', { key: 'name-field' }, [
               React.createElement('label', {
@@ -962,7 +962,7 @@ function Contact() {
                 onChange: handleInputChange,
                 required: true,
                 disabled: isSubmitting,
-                className: 'w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                className: 'w-full mobile-input-enhanced md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
               })
             ]),
             
@@ -981,7 +981,7 @@ function Contact() {
                 onChange: handleInputChange,
                 required: true,
                 disabled: isSubmitting,
-                className: 'w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                className: 'w-full mobile-input-enhanced md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
               })
             ]),
             
@@ -999,7 +999,7 @@ function Contact() {
                 value: formData.organization,
                 onChange: handleInputChange,
                 disabled: isSubmitting,
-                className: 'w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
+                className: 'w-full mobile-input-enhanced md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent'
               })
             ]),
             
@@ -1017,8 +1017,8 @@ function Contact() {
                 onChange: handleInputChange,
                 required: true,
                 disabled: isSubmitting,
-                rows: 5,
-                className: 'w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical'
+                rows: 4,
+                className: 'w-full mobile-input-enhanced md:px-4 md:py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent resize-vertical'
               })
             ]),
             
@@ -1026,13 +1026,13 @@ function Contact() {
               key: 'submit-btn',
               type: 'submit',
               disabled: isSubmitting,
-              className: 'w-full bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50'
+              className: 'w-full bg-blue-600 text-white mobile-input-enhanced md:px-6 md:py-3 rounded-lg font-semibold hover:bg-blue-700 transition-colors disabled:opacity-50'
             }, isSubmitting ? 'Sending...' : 'Send Message')
           ]),
           
           message && React.createElement('p', {
             key: 'form-message',
-            className: `mt-4 text-sm ${message.includes('successfully') ? 'text-green-600' : 'text-red-600'}`
+            className: `mt-4 text-xs md:text-sm ${message.includes('successfully') ? 'text-green-600' : 'text-red-600'}`
           }, message)
         ])
       ])
